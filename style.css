@@ -8,18 +8,24 @@ html
 	padding: 0;
 }
 
+body{
+	background: url('images/bg.jpg') repeat;
+}
+
 ul {
 	list-style-type: none;
 }
 
-.wrapper {
-	width: 400px;
-	height: 500px;
-	margin: 100px auto;
-	background: url('images/bg.jpg') repeat;
+img {
+	border: none;
 }
 
-.wrapper .list {
+.wrapper {
+	width: 400px;
+	margin: 100px auto;
+}
+
+.list {
 	position: relative;
 	width: 292px;
 	margin: 0 auto;
@@ -54,24 +60,13 @@ ul {
 	top: 198px;
 }
 
-.wrapper ul a {
-	display: inline-block;
-	height: 52px;
-	width: 80px;
+.item img {
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
 }
 
-.select a {
-	background: url('images/select.png') no-repeat;
-}
-
-.add a {
-	background: url('images/add.png') no-repeat;
-}
-
-.edit a {
-	background: url('images/edit.png') no-repeat;
-}
-
-.share a {
-	background: url('images/share.png') no-repeat;
+.list:hover img {
+	/*-webkit-transform: scale(1,0.5);*/
 }
